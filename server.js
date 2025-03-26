@@ -4,6 +4,7 @@ const routes = require('./routes/index');
 require('dotenv').config();
 const app = express();
 
+
 const usersRoutes = require('./routes/api/users.js');
 app.use('/api/users', usersRoutes);
 
@@ -21,7 +22,3 @@ app.listen(PORT, () => {
 });
 
 app.use(routes.unprotectedRoutes);
-
-
-
-
